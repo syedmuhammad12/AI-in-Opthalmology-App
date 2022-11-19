@@ -1,9 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreen">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LoginScreen"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/account_ready_text"
+                    style="@style/viewParent.headerText.NoMode"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Already \nhave an \nAccount?"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@id/account_ready_text"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/optho_pic" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                app:boxStrokeColor="@color/primaryTextColor">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/login_email_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                app:boxStrokeColor="@color/primaryTextColor">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/login_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                style="@style/viewParent"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:text="Forgot Password?"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="@dimen/newsMoreTextSize" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cirLoginButton"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="Login"></androidx.appcompat.widget.AppCompatButton>
+
+
+            <TextView
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="New user? Register Now"
+                android:textAlignment="center"
+                android:textColor="@color/themeColor"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/linearLayoutCompat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Developed By"
+                    android:textColor="#0C83EC"
+                    android:textSize="18dp"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="543dp" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginRight="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ned_logo" />
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/ncl_logo" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@+id/linearLayoutCompat">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/allerta"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:text="Collaboration With"
+                    android:textColor="#0C83EC"
+                    android:textSize="18dp"
+                    tools:layout_editor_absoluteX="45dp"
+                    tools:layout_editor_absoluteY="543dp" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/ncl_logo" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>

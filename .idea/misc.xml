@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/layout/activity_login_screen.xml" value="0.21965579710144928" />
+        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/drawable/button_background_blue.xml" value="0.1795" />
+        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/drawable/ic_back_img.xml" value="0.1795" />
+        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/drawable/ic_register_hero.xml" value="0.1795" />
+        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/layout/activity_login_screen.xml" value="0.264" />
         <entry key="..\:/App Development/AIOpthomology/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/layout/activity_patient_info.xml" value="0.21784420289855072" />
+        <entry key="..\:/App Development/AIOpthomology/app/src/main/res/layout/age_dropdown_text.xml" value="0.21784420289855072" />
       </map>
     </option>
   </component>

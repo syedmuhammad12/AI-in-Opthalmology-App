@@ -12,7 +12,7 @@
         android:id="@+id/imageView"
         android:layout_width="269dp"
         android:layout_height="282dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/textView"
         android:layout_width="320dp"
         android:layout_height="65dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/allerta"
         android:gravity="center"
         android:text="AI in Opthalmology"
@@ -68,16 +68,16 @@
 
             <ImageView
                 android:id="@+id/image1"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginRight="5dp"
                 android:paddingTop="5dp"
                 android:src="@drawable/ned_logo" />
 
             <ImageView
                 android:id="@+id/image2"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginLeft="5dp"
                 android:paddingTop="5dp"
                 android:src="@drawable/ncl_logo" />
@@ -91,7 +91,7 @@
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="64dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -102,7 +102,7 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/allerta"
@@ -116,8 +116,8 @@
 
         <ImageView
             android:id="@+id/image3"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:paddingTop="5dp"

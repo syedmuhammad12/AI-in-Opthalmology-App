@@ -2,20 +2,28 @@ package com.hivefive.aiopthomology;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.view.View;
+import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
 
-    static int splash_scr = 3000;
+    static int splash_scr = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -40,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
 //                }
 
 
-
+            startActivity(new Intent(MainActivity.this, LoginScreen.class));
+            finishAffinity();
 
             }
         }, splash_scr);
