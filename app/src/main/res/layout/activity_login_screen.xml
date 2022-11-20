@@ -79,7 +79,7 @@
                 android:textSize="@dimen/newsMoreTextSize" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/cirLoginButton"
+                android:id="@+id/login_but"
                 style="@style/loginButton"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/loginViewsMargin"

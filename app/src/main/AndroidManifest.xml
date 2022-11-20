@@ -23,6 +23,20 @@
         android:theme="@style/Theme.AIOpthomology"
         tools:targetApi="31">
         <activity
+            android:name=".ResultPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ImageOptionsMenu"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PatientInfo"
             android:exported="false" />
         <activity

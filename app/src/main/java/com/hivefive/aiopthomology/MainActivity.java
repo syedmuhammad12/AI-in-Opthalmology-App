@@ -47,9 +47,9 @@ public class MainActivity extends AppCompatActivity {
 //                    finish();
 //                }
 
-
-            startActivity(new Intent(MainActivity.this, LoginScreen.class));
-            finishAffinity();
+                Intent intent = new Intent(MainActivity.this, LoginScreen.class);
+                startActivity(intent);
+                finishAffinity();
 
             }
         }, splash_scr);

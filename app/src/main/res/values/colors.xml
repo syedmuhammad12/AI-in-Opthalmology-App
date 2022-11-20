@@ -25,5 +25,9 @@
     <color name="whiteTextColor">#fff</color>
     <color name="primaryTextColor">#11CFC5</color>
 
+    <color name="ucrop_color_toolbar">@color/teal_700</color>
+    <color name="ucrop_color_statusbar">@color/teal_700</color>
+    <color name="ucrop_color_widget_active">@color/teal_700</color>
+
 
 </resources>

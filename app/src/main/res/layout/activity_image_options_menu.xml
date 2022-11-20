@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImageOptionsMenu">
+
+
+
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#FF0C65B3"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="16dp">
+
+
+
+
+        <ImageView
+            android:id="@+id/img_scr"
+            android:layout_width="match_parent"
+            android:layout_height="224dp"
+            android:layout_gravity="center"
+            android:layout_margin="50dp"
+            android:src="@drawable/img_select"
+            tools:ignore="RtlHardcoded">
+
+        </ImageView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/allerta"
+        android:text="Select Option"
+        android:textColor="#0C83EC"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_photo_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_outline_photo_camera_24">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/antic"
+                    android:gravity="center"
+                    android:text="Capture Photo"
+                    android:textColor="@color/black"
+                    android:textSize="23dp">
+
+                </TextView>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card_photo_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_outline_photo_size_select_actual_24">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/antic"
+                    android:gravity="center"
+                    android:text="Select Photo"
+                    android:textColor="@color/black"
+                    android:textSize="23dp">
+
+                </TextView>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
